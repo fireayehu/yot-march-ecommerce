@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useProduct } from "../contex/product";
-import ClockLoader from "react-spinners/ClockLoader";
+import ScaleLoader from "react-spinners/ScaleLoader";
 
 export const ProductDetail = () => {
   const params = useParams();
@@ -15,7 +15,7 @@ export const ProductDetail = () => {
   if (loading || !product) {
     return (
       <div className="flex  m-8 mt-24  justify-center items-center h-40">
-        <ClockLoader color="rgb(59 130 246 / var(--tw-bg-opacity)" />
+        <ScaleLoader color="rgb(59 130 246 / var(--tw-bg-opacity)" />
       </div>
     );
   }
